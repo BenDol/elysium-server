@@ -566,6 +566,7 @@ add_library(game STATIC
 target_link_libraries(game
   shared
   detour
+  ${ACE_LIBRARIES}
 )
 
 #add_dependencies(game revision.h)

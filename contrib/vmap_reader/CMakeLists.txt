@@ -32,6 +32,7 @@ include_directories(
     ../../dep/recastnavigation/Detour/Include
     ../../dep/recastnavigation/Recast/Include
     ../../dep/src/zlib
+    ${ACE_INCLUDE_DIR}
 )
 
 add_library(zlib
@@ -143,7 +144,7 @@ add_library(vmap
 	../../src/game/vmap/ModelInstance.cpp
 )
 
-target_link_libraries(vmap zlib g3dlite)
+target_link_libraries(vmap zlib g3dlite ${ACE_LIBRARIES})
 
 set(SOURCES
     main.cpp

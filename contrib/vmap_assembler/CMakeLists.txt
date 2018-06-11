@@ -28,6 +28,7 @@ include_directories(../../src/shared)
 include_directories(../../src/game/vmap/)
 include_directories(../../dep/include/g3dlite/)
 include_directories(../../src/framework/)
+include_directories(${ACE_INCLUDE_DIR})
 
 add_executable(vmap_assembler vmap_assembler.cpp)
 target_link_libraries(vmap_assembler vmap ${ACE_LIBRARIES})
